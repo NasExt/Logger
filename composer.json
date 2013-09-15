@@ -1,0 +1,21 @@
+{
+    "name": "nasext/logger",
+    "type": "library",
+    "description": "Logger for Nette Framework",
+    "keywords": ["nette", "nasext", "logger"],
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Dusan Hudak"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "nette/nette": "@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "NasExt\\Logger\\": "src/"
+        }
+    }
+}
