@@ -15,6 +15,7 @@ use Nette\Diagnostics\Debugger;
 use Nette\Diagnostics\Dumper;
 use Nette\FatalErrorException;
 use Nette\Object;
+use Nette\Utils\Json;
 
 /**
  * Logger
@@ -125,7 +126,7 @@ class Logger extends Object
 		}
 
 		if (!is_string($args)) {
-			$args = Dumper::toText($args);
+			$args = Json::encode($args);
 		}
 
 		if (!is_string($message)) {
